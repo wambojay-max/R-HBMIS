@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RAO HBMIS Project Report</title>
+<style>
+@page { size: A4; margin: 20mm 18mm 18mm; }
+* { box-sizing: border-box; }
+body { font-family: Georgia, "Times New Roman", serif; color: #1f2933; line-height: 1.55; font-size: 10.5pt; }
+h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; color: #123b4a; }
+h1 { font-size: 28pt; line-height: 1.15; margin: 0 0 12pt; }
+h2 { font-size: 18pt; border-bottom: 2px solid #2b7a78; padding-bottom: 5pt; margin-top: 22pt; }
+h3 { font-size: 12pt; margin-bottom: 4pt; }
+p { margin: 6pt 0; }
+ul, ol { margin-top: 4pt; }
+.cover { min-height: 245mm; display: flex; flex-direction: column; justify-content: center; text-align: center; page-break-after: always; }
+.cover .rule { width: 80px; border-top: 5px solid #e07a5f; margin: 18px auto; }
+.cover p { font-family: Arial, Helvetica, sans-serif; color: #52616b; font-size: 12pt; }
+.subtitle { font-size: 16pt !important; color: #2b7a78 !important; }
+.section-break { page-break-before: always; }
+.meta, table { width: 100%; border-collapse: collapse; margin: 10pt 0 14pt; }
+.meta td { border-bottom: 1px solid #d8e1e5; padding: 6pt; }
+.meta td:first-child { width: 28%; font-weight: bold; color: #123b4a; }
+th { background: #123b4a; color: white; text-align: left; }
+th, td { border: 1px solid #cbd5d9; padding: 6pt; vertical-align: top; }
+tr:nth-child(even) td { background: #f1f6f5; }
+.callout { border-left: 4px solid #e07a5f; background: #fff5f1; padding: 9pt 12pt; margin: 12pt 0; }
+code { font-family: Consolas, monospace; background: #eef2f3; padding: 1pt 3pt; }
+pre { background: #eef2f3; padding: 9pt; font-family: Consolas, monospace; font-size: 8.5pt; white-space: pre-wrap; }
+.footer-note { margin-top: 30pt; color: #52616b; font-size: 9pt; text-align: center; }
+</style>
+</head>
+<body>
+<section class="cover">
+  <p>RAO HOSTEL BOOKING AND MANAGEMENT INFORMATION SYSTEM</p>
+  <div class="rule"></div>
+  <h1>Project Proposal and<br>Final Documentation</h1>
+  <p class="subtitle">A PHP and MariaDB Hostel Management Solution</p>
+  <p>Prepared for academic and project submission</p>
+  <p class="footer-note">Version 1.0 &nbsp;|&nbsp; 24 August 2026</p>
+</section>
+
+<h1>Part I: Project Proposal</h1>
+<h2>1. Introduction</h2>
+<p>RAO HBMIS is proposed as a centralized web-based system for managing hostel operations. It will replace fragmented manual records with a controlled application for student registration, room management, bookings, allocations, payments, users, and reports.</p>
+
+<h2>2. Problem Statement</h2>
+<p>Manual hostel administration can lead to duplicated records, delayed room allocation, inaccurate room availability, weak payment tracking, and limited visibility for management. Staff need a single source of current information and clear role-based access to perform daily operations reliably.</p>
+
+<h2>3. Aim and Objectives</h2>
+<p><strong>Aim:</strong> To develop a secure and practical hostel booking and management information system.</p>
+<ul>
+<li>Centralize hostel and student records.</li>
+<li>Improve room availability and allocation tracking.</li>
+<li>Manage bookings, payments, and reports consistently.</li>
+<li>Protect information through authentication and user roles.</li>
+<li>Provide AI-assisted operational questions and room suggestions.</li>
+</ul>
+
+<h2>4. Scope</h2>
+<table><tr><th>Included</th><th>Excluded from the current version</th></tr><tr><td>Students, rooms, bookings, allocations, payments, users, reports, dashboard, OpenAI assistant, and room recommendations.</td><td>Online payment gateway, SMS/email automation, student self-service portal, and automatic AI allocation approval.</td></tr></table>
+
+<h2>5. Proposed Users</h2>
+<table><tr><th>Role</th><th>Responsibilities</th></tr><tr><td>Administrator</td><td>Manage users and all hostel operations.</td></tr><tr><td>Warden</td><td>Manage students, rooms, bookings, allocations, payments, and reports.</td></tr><tr><td>Staff</td><td>View and manage permitted operational records and reports.</td></tr></table>
+
+<h2>6. Proposed Technology</h2>
+<ul><li>Frontend: HTML, CSS, and JavaScript.</li><li>Backend: PHP with session authentication.</li><li>Database: MySQL/MariaDB using PDO.</li><li>Deployment: XAMPP on Windows for local operation.</li><li>AI integration: OpenAI Responses API through server-side PHP cURL.</li></ul>
+
+<h2>7. Expected Benefits</h2>
+<ul><li>Faster access to reliable hostel information.</li><li>Better control of room capacity, gender matching, and status.</li><li>Reduced duplication and manual calculation.</li><li>Improved accountability through user roles.</li><li>Faster operational insight through dashboard summaries and AI assistance.</li></ul>
+
+<h2>8. Deliverables</h2>
+<ol><li>Working PHP hostel management application.</li><li>MariaDB schema and initial administrator account.</li><li>OpenAI assistant and room recommendation endpoints.</li><li>Setup guide and final project documentation.</li></ol>
+
+<h2>9. Implementation Plan</h2>
+<table><tr><th>Stage</th><th>Work</th></tr><tr><td>Analysis</td><td>Identify hostel workflows, records, roles, and validation rules.</td></tr><tr><td>Design</td><td>Define database tables, relationships, pages, and access controls.</td></tr><tr><td>Development</td><td>Build authentication, CRUD modules, reports, dashboard, and AI endpoints.</td></tr><tr><td>Testing</td><td>Validate syntax, database relationships, authorization, business rules, and AI failure handling.</td></tr><tr><td>Deployment</td><td>Install through XAMPP, import the schema, configure OpenAI, and provide documentation.</td></tr></table>
+
+<h2>10. Conclusion of Proposal</h2>
+<p>The proposed system is feasible using the existing XAMPP environment and provides a focused response to the operational needs of a hostel. The design keeps AI under staff supervision and preserves the database as the authoritative source of records.</p>
+
+<section class="section-break"><h1>Part II: Final Project Documentation</h1>
+<h2>1. Completed System Overview</h2>
+<p>RAO HBMIS was implemented as a PHP and MariaDB application. It provides authenticated management pages for hostel data and a dashboard showing current operational totals. The completed system also includes two OpenAI-powered features.</p>
+
+<h2>2. Completed Modules</h2>
+<table><tr><th>Module</th><th>Completed functionality</th></tr><tr><td>Authentication</td><td>Login, logout, password hashing, sessions, and role checks.</td></tr><tr><td>Students</td><td>Add, view, edit, delete, and validate student records.</td></tr><tr><td>Rooms</td><td>Manage room number, type, capacity, floor, gender, and status.</td></tr><tr><td>Bookings</td><td>Create and manage booking records with status validation.</td></tr><tr><td>Allocations</td><td>Assign confirmed students to rooms while checking capacity and gender.</td></tr><tr><td>Payments</td><td>Record payment amount, method, reference, date, and status.</td></tr><tr><td>Reports</td><td>Display student, room, booking, allocation, and payment summaries.</td></tr><tr><td>AI tools</td><td>Answer hostel questions and suggest rooms for awaiting allocations.</td></tr></table>
+
+<h2>3. Database Design</h2>
+<p>The database is named <code>rao_hbmis</code>. The schema is provided in <code>database/schema.sql</code>.</p>
+<ul><li><code>users</code>: user accounts and roles.</li><li><code>students</code>: student profiles.</li><li><code>rooms</code>: room details and availability.</li><li><code>bookings</code>: student booking requests.</li><li><code>allocations</code>: room assignments and dates.</li><li><code>payments</code>: payment transactions and statuses.</li></ul>
+<p>Foreign keys protect referenced students and rooms. Unique keys prevent duplicate user emails, student IDs, room numbers, and payment references.</p>
+
+<h2>4. AI Implementation</h2>
+<p><code>config/openai.php</code> sends requests to OpenAI from the server. <code>api/assistant.php</code> provides current summary data for staff questions. <code>api/room_recommendations.php</code> sends confirmed unallocated students and available rooms for matching suggestions.</p>
+<div class="callout"><strong>Operational control:</strong> AI suggestions are display-only. Staff must review and create any booking or allocation through the normal management workflow.</div>
+
+<h2>5. Security and Validation</h2>
+<ul><li>Protected pages require a logged-in session.</li><li>Role checks restrict administrative actions.</li><li>Passwords use PHP <code>password_hash()</code> and <code>password_verify()</code>.</li><li>PDO prepared statements are used for database input.</li><li>Database output is HTML-escaped.</li><li>AI request input is limited and API keys remain server-side.</li></ul>
+
+<h2>6. Installation</h2>
+<ol><li>Copy the project to <code>C:\xampp\htdocs\RAO_HBMIS</code>.</li><li>Start Apache and MySQL in XAMPP.</li><li>Open phpMyAdmin at <code>http://localhost/phpmyadmin</code>.</li><li>Import <code>database/schema.sql</code>.</li><li>Open <code>http://localhost/RAO_HBMIS/auth/login.php</code>.</li></ol>
+<p>Initial login: <code>admin@rao-hbmis.local</code> / <code>Admin@123</code>. Change this password after the first login.</p>
+
+<h2>7. OpenAI Configuration</h2>
+<pre>setx OPENAI_API_KEY "your-openai-api-key"
+setx OPENAI_MODEL "gpt-4o-mini"</pre>
+<p>Restart the XAMPP Control Panel and Apache after setting the environment variables. Ensure the PHP cURL extension is enabled in <code>C:\xampp\php\php.ini</code>.</p>
+
+<h2>8. Testing and Verification</h2>
+<ul><li>PHP syntax validation passed for the changed PHP files.</li><li>Editor checks reported no errors in the AI integration files and dashboard.</li><li>The schema matches the application queries and form fields.</li><li>The project was committed and pushed to GitHub on the <code>main</code> branch.</li></ul>
+
+<h2>9. Limitations and Future Work</h2>
+<ul><li>Add CSRF protection to state-changing forms.</li><li>Add audit logging, search, filters, and pagination.</li><li>Add password reset and account lockout functionality.</li><li>Add notifications and downloadable reports.</li><li>Add student self-service access.</li><li>Use HTTPS, a dedicated database user, and production environment configuration.</li></ul>
+
+<h2>10. Final Conclusion</h2>
+<p>RAO HBMIS delivers the planned core hostel management capabilities in a single application. It combines structured database records, role-based workflows, operational reports, and supervised AI assistance. The result is a practical foundation that can be extended for production deployment and additional student services.</p>
+
+<h2>11. Project Repository</h2>
+<p>GitHub: <strong>https://github.com/wambojay-max/R-HBMIS</strong></p>
+</section>
+</body>
+</html>
